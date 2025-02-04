@@ -1,0 +1,14 @@
+function openModal() {
+    document.getElementById("donateModal").style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("donateModal").style.display = "none";
+}
+
+window.onclick = function(event) {
+    let modal = document.getElementById("donateModal");
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+};
